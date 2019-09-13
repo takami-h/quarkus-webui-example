@@ -1,0 +1,6 @@
+# Quarkus Web UI example with resteasy-html + thymeleaf
+
+- run as java app: `mvn clean compile quarkus:dev`
+- run as native binary: `mvn -Pnative clean package && ./target/quarkus-webui-1.0-SNAPSHOT-runner`
+
+- open page: `curl -s -H 'Accept: text/html' localhost:8080/greeting?to=John%20Doe`
